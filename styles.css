@@ -1,0 +1,335 @@
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  overflow: hidden;
+}
+
+#main-wrapper {
+  width: 100%;
+  height: auto;
+  padding: 20px auto;
+  z-index: 10;
+}
+
+.container_box {
+  width: 100%;
+  height: 500vh;
+  transition: 0.8s ease-in-out;
+}
+
+.container {
+  width: 100%;
+  padding: 10px;
+  min-height: 100vh;
+  z-index: 10;
+  position: relative;
+}
+
+#box_1 {
+  background-image: url('./images/Hire-MERN-Stack-Developers-from-us.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  background-color: white;
+}
+
+#box_1 .name_box {
+  padding: 10px 20px;
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  color: black;
+}
+#box_1 .name {
+  margin: 20px auto;
+}
+#box_1 .career {
+  font-size: 1rem;
+  letter-spacing: 4px;
+  border-right: 5px solid;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 2.7s steps(18), cursor 0.4s step-end infinite alternate;
+}
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+/* box one end */
+
+/* box two start */
+#box_2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+}
+.frameworks {
+  display: grid;
+  padding: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+}
+.frameworks img {
+  height: 100px;
+  width: auto;
+  border: 5px solid rgba(0, 0, 0, 0.373);
+  transition: transform 0.3s ease;
+  border-radius: 5px;
+}
+.frameworks img:hover {
+  transform: scale(1.3); /* Scale up the image on hover */
+}
+#img_2 {
+  border-radius: 30px;
+}
+#img_3 {
+  border-radius: 50px;
+}
+#img_4 {
+  border-radius: 40px;
+}
+
+.learned h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: white;
+  font-family: 'Roboto Mono', monospace;
+}
+.learning_road {
+  text-align: left;
+}
+.mile_stone {
+  margin: 10px 0;
+  font-size: 18px;
+  color: white;
+}
+.mile_stone ol {
+  list-style-type: circle;
+  padding-left: 20px;
+}
+.mile_stone li {
+  margin: 5px 0;
+  font-size: 16px;
+  color: white;
+  font-family: 'Roboto Mono', monospace;
+}
+
+/* box two end */
+
+#box_3 {
+  margin: 0 auto;
+  max-width: 1000px;
+  max-height: 90vh;
+}
+
+.project_list {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.project {
+  flex: 0 0 calc(33.33% - 10px);
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.project img {
+  max-height: 210px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.project a {
+  color: black;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  display: block;
+  position: relative;
+  margin-top: 25px;
+  transition: color 0.3s;
+  text-align: center;
+}
+.project a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  left: 0;
+  bottom: -5px;
+  background-color: #dc0d0d;
+  border-radius: 5px;
+  transform-origin: bottom;
+  transform: scaleX(0);
+  transition: transform 0.5s;
+}
+.project a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom;
+}
+
+/* box three end */
+#box_4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  padding: 20px;
+  color: honeydew;
+}
+
+#box_4 h4 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.teacher_list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.teacher_list li {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.other_teacher {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 16px;
+}
+#box_4 img {
+  margin: 20px;
+  height: 300px;
+  margin-bottom: -100px;
+}
+/* box four end */
+
+#box_5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+}
+#box_5 img {
+  width: 300px;
+  margin-bottom: 100px;
+}
+#box_5 p {
+  margin: 10px auto;
+}
+#box_5 .contact_me {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+
+.button_boxs {
+  position: fixed;
+  bottom: 20px;
+  right: 50px;
+  z-index: 100;
+  margin-bottom: 50px;
+  color: red;
+}
+.btn {
+  cursor: pointer;
+  display: block;
+  margin-top: 20px;
+  border-radius: 5px;
+  padding: 30px 20px;
+  font-size: 25px;
+}
+#prevBtn {
+  background-color: transparent;
+  border-top: 4px solid rgb(112, 0, 0);
+  border-left: 4px solid rgb(112, 0, 0);
+  transform: rotate(-45deg);
+}
+#nextBtn {
+  background-color: transparent;
+  border-top: 4px solid rgb(112, 0, 0);
+  border-right: 4px solid rgb(112, 0, 0);
+  transform: rotate(45deg);
+}
+
+@media (max-width: 768px) {
+  #box_1 {
+    justify-content: center;
+    align-items: last baseline;
+  }
+  #box_1 .name_box {
+    margin-bottom: 40%;
+    padding: 5px 10px;
+  }
+  #box_1 .career {
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+    border-right: 5px solid;
+  }
+  /* box one done */
+  #box_2 {
+    flex-direction: column;
+  }
+  .frameworks {
+    display: block;
+  }
+  .learned .learning_road {
+    display: none;
+  }
+  /*  box two done */
+  .project_list {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .project {
+    max-width: 300px;
+    min-width: 250px;
+  }
+  .project a {
+    margin: 5px 10px;
+  }
+  .project img {
+    display: none;
+  }
+  /* box three done */
+  #box_4 img {
+    margin: 20px;
+    height: 200px;
+  }
+  /* box four done */
+  .btn {
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 20px 12px;
+    font-size: 20px;
+  }
+}
