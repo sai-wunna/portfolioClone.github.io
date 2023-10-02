@@ -85,7 +85,7 @@ body {
   gap: 5px;
 }
 .frameworks img {
-  height: 100px;
+  height: 110px;
   width: auto;
   border: 5px solid rgba(0, 0, 0, 0.373);
   transition: transform 0.3s ease;
@@ -148,7 +148,7 @@ body {
 }
 
 .project {
-  flex: 0 0 calc(33.33% - 10px);
+  flex: 0 0 calc(33% - 10px);
   background-color: #f9f9f9;
   padding: 10px;
   border-radius: 5px;
@@ -195,6 +195,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  justify-self: baseline;
   align-items: center;
   background-color: black;
   padding: 20px;
@@ -225,7 +226,8 @@ body {
 #box_4 img {
   margin: 20px;
   height: 300px;
-  margin-bottom: -100px;
+  margin-bottom: -200px;
+  align-items: flex-end;
 }
 /* box four end */
 
@@ -324,6 +326,7 @@ body {
   #box_4 img {
     margin: 20px;
     height: 200px;
+    margin-bottom: -200px;
   }
   /* box four done */
   .btn {
@@ -527,4 +530,3 @@ body {
   color: white;
 }
 /*  game end */
-
