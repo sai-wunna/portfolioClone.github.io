@@ -338,6 +338,7 @@ body {
 }
 /* game box start */
 #game_start_modal_btn {
+  /* display: inline-block; */
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
@@ -348,6 +349,7 @@ body {
 }
 #game_start_modal_btn:hover {
   transform: scale(1.5);
+  text-shadow: 0 0 6px #f516df, 0 0 14px #6c16f5;
 }
 .modal_container {
   display: none; /* Hidden by default */
@@ -358,7 +360,7 @@ body {
   height: 100%;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.932); /* Semi-transparent background */
+  background-color: black;
   z-index: 10;
   overflow: auto;
 }
@@ -368,11 +370,14 @@ body {
   right: 10px;
   font-size: 36px;
   cursor: pointer;
-  color: white;
+  color: blue;
+  padding: 0px 7px;
+  transition: box-shadow 0.3s ease;
+  box-shadow: 0 0 5px #f516e2, 0 0 10px #f847ea;
 }
 
 .close:hover {
-  color: #f00;
+  box-shadow: 0 0 30px #e849db, 0 0 40px #e562da;
 }
 
 .game_wrapper {
@@ -405,7 +410,7 @@ body {
   font-size: 24px;
   font-weight: bold;
   cursor: pointer;
-  box-shadow: 5px 5px 10px rgb(255, 0, 230);
+  box-shadow: 3px 3px 6px #f516e2;
   user-select: none;
   transition: transform 0.3s ease;
 }
@@ -439,7 +444,8 @@ body {
   transition: opacity 0.3s;
 }
 .bingo {
-  box-shadow: 5px 5px 10px rgba(0, 255, 60, 0.861);
+  transform: scale(1.05);
+  box-shadow: 4px 4px 8px #16f529;
 }
 
 .game_key:hover {
@@ -474,9 +480,14 @@ body {
   text-align: center;
   color: rgb(255, 255, 255);
   padding: 5px 20px;
-  margin: 5px;
-  border-radius: 5px;
-  box-shadow: 5px 5px 10px rgba(0, 255, 60, 0.861);
+  margin-top: 15px;
+  border: 1px solid green;
+  border-radius: 20px;
+  transition: box-shadow 0.3s ease;
+  box-shadow: 0 0 3px #16f529, 0 0 7px #16f529;
+}
+.game_dashboard:hover {
+  box-shadow: 0 0 6px #16f529, 0 0 14px #16f529;
 }
 #learningLevel {
   height: 10px;
@@ -493,6 +504,7 @@ body {
   height: 10px;
   background: red;
   cursor: pointer;
+  box-shadow: 0 0 3px #dd0000, 0 0 7px #a10000;
 }
 
 #learningLevel::-moz-range-thumb {
@@ -500,6 +512,7 @@ body {
   width: 5px;
   height: 10px;
   background: silver;
+  box-shadow: 0 0 3px #dd0000, 0 0 7px #a10000;
   cursor: pointer;
 }
 
@@ -508,6 +521,7 @@ body {
   border-radius: 10px;
   padding: 5px 50px;
   font-weight: bold;
+  text-shadow: 0 0 6px #16f529, 0 0 14px #16f529;
 }
 
 .restart_btn {
