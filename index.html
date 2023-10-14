@@ -6,27 +6,32 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
     <meta name="google-site-verification" content="jQvlaAYCZPqcChuNenRZDSAXUqXiR4i--mb2cfsdjYk" />
+        <meta name="description" content="Sai Wunna's Portfolio" />
     <title>Portfolio</title>
   </head>
   <body>
     <div id="main_wrapper">
-      <div class="container_box">
-        <div class="container" id="box_1">
+            <nav class="button_box">
+        <button class="btn" id="prevBtn"></button>
+        <button class="btn" id="nextBtn"></button>
+      </nav>
+      <main class="container_box">
+        <article class="container" id="box_1">
           <div class="name_box">
-            <p class="name">Hi, I am<span> Sai Wunna</span></p>
-            <p class="career">On The Way of Learning Web Dev</p>
+            <h1 class="name">Hi, I am<span property="sai wunna"> Sai Wunna</span></h1>
+            <h6 class="career">On The Way of Learning Web Dev</h6>
           </div>
-        </div>
-        <div class="container" id="box_2">
+        </article>
+        <section class="container" id="box_2">
           <div class="frameworks">
-            <img src="./images/1200px-Laravel.svg.png" id="img_1" />
-            <img src="./images/mongodb.jpg" id="img_2" />
-            <img src="./images/reactjs.png" id="img_3" />
-            <img src="./images/1_XP-mZOrIqX7OsFInN2ngRQ.png" id="img_4" />
-            <img src="./images/nodejs.png" id="img_5" />
+            <img src="./images/1200px-Laravel.svg.png" id="img_1" alt="Laravel PHP Framework" />
+            <img src="./images/mongodb.jpg" id="img_2" alt="NoSQL Database MongoDb"/>
+            <img src="./images/reactjs.png" id="img_3" alt="Frontend Framework React JS" />
+            <img src="./images/1_XP-mZOrIqX7OsFInN2ngRQ.png" id="img_4" alt="Javascript Backend Framework ExpressJS" />
+            <img src="./images/nodejs.png" id="img_5" alt="Javascript Run Time Environment NodeJS" />
             <img
               src="./images/mariadb-logo-vert_blue-transparent.png"
-              id="img_6" />
+              id="img_6" alt="SQL Database MariaDB - MySQL" />
           </div>
           <div class="learned">
             <h3>What I've learned !</h3>
@@ -60,49 +65,49 @@
               </li>
             </ul>
           </div>
-        </div>
-        <div class="container project_list" id="box_3">
+        </section>
+        <section class="container project_list" id="box_3">
           <div class="project" id="project_1">
-            <img src="project_images/dice.png" />
+            <img src="project_images/dice.png" alt="Roll Dice Game" />
             <a href="https://sai-wunna.github.io/sai-wunna-code-dice.github.io/"
               >Roll Dice</a
             >
           </div>
           <div class="project" id="project_2">
-            <img src="project_images/slideshow.png" />
+            <img src="project_images/slideshow.png" alt="Slide Show Creator App" />
             <a
               href="https://sai-wunna.github.io/sai-wunna-code-slider.github.io/"
               >Let's make a slide show</a
             >
           </div>
           <div class="project" id="project_3">
-            <img src="project_images/rock_paper.png" />
+            <img src="project_images/rock_paper.png" alt="Rock Paper Scissor Game" />
             <a href="https://sai-wunna.github.io/sai-wunna-code-rock.github.io/"
               >Rock Paper Scissor</a
             >
           </div>
           <div class="project" id="project_4">
-            <img src="project_images/mp3.png" />
+            <img src="project_images/mp3.png" alt="MP3 Player" />
             <a href="https://sai-wunna.github.io/sai-wunna-code-mp3.github.io/"
               >MP3 Player</a
             >
           </div>
           <div class="project" id="project_5">
-            <img src="project_images/calculator.png" />
+            <img src="project_images/calculator.png" alt="Calculator App" />
             <a
               href="https://sai-wunna.github.io/sai-wunna-code-calculator.github.io/"
               >Calculator</a
             >
           </div>
           <div class="project" id="project_6">
-            <img src="project_images/tic_tac_toe.png" />
+            <img src="project_images/tic_tac_toe.png" alt="Tic Tac Toe Game" />
             <a
               href="https://sai-wunna.github.io/sai-wunna-code-tic-tac-toe.github.io/"
               >Tic Tac Toe</a
             >
           </div>
-        </div>
-        <div class="container" id="box_4">
+        </section>
+        <article class="container" id="box_4">
           <h4>Where I Studied From</h4>
           <ul class="teacher_list">
             <li>Tr Ei Maung's Professional Web-Developer Book</li>
@@ -115,14 +120,14 @@
             And From Many Resources like Books, Internet Resources,
             Documentation, AI Chat, YouTube
           </div>
-          <img src="./images/falling_letters.jpg" />
-        </div>
-        <div class="container" id="box_5">
+          <img src="./images/falling_letters.jpg" alt="Falling Letters" />
+        </article>
+        <section class="container" id="box_5">
           <div class="img_box">
-            <img src="./images/honzahruby171100196.jpg" />
+            <img src="./images/honzahruby171100196.jpg" alt="Filling Brain with Knowledge" />
             <p>Let Me Share My Knowledge</p>
             <div id="game_start_modal_btn">Like I Was</div>
-            <div class="modal_container">
+            <article class="modal_container">
               <div class="game_wrapper">
                 <span class="close" id="close_modal">&times;</span>
                 <div class="game_key_wrapper" id="game_key_wrapper">
@@ -148,20 +153,16 @@
                   <button class="restart_btn" id="restart_game">Restart</button>
                 </div>
               </div>
-            </div>
+            </article>
             <div class="contact_me">
-              <a href="">Facebook</a>
-              <a href="">Github</a>
-              <a href="">Gmail</a>
+              <a href="#">Facebook</a>
+              <a href="https://github.com/sai-wunna">Github</a>
+              <a href="#">Gmail</a>
             </div>
             <div class="footer">Copy Right 2023 October</div>
           </div>
-        </div>
-      </div>
-      <div class="button_box">
-        <button class="btn" id="prevBtn"></button>
-        <button class="btn" id="nextBtn"></button>
-      </div>
+        </section>
+      </main>
     </div>
     <script src="script.js"></script>
   </body>
